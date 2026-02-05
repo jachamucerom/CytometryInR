@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="David Rach">
-<meta name="dcterms.date" content="2026-01-21">
+<meta name="dcterms.date" content="2026-02-04">
 
-<title>Using Positron – Cytometry in R</title>
+<title>Bonus Content – Cytometry in R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../course/00_Git/index.html" rel="next">
-<link href="../../course/00_WorkstationSetup/index.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -144,7 +142,7 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../course/00_GitHub/index.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../../course/00_Positron/index.html">00 - Positron</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Bonus Content</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -161,13 +159,13 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Getting Started</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../course/00_GitHub/index.html" class="sidebar-item-text sidebar-link">
@@ -182,7 +180,7 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../course/00_Positron/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../course/00_Positron/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">00 - Positron</span></a>
   </div>
 </li>
@@ -251,44 +249,23 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a></li>
-  <li><a href="#interpreter" id="toc-interpreter" class="nav-link" data-scroll-target="#interpreter">Interpreter</a></li>
-  <li><a href="#folders" id="toc-folders" class="nav-link" data-scroll-target="#folders">Folders</a></li>
-  <li><a href="#panel" id="toc-panel" class="nav-link" data-scroll-target="#panel">Panel</a>
+  <li><a href="#workstationsetup" id="toc-workstationsetup" class="nav-link active" data-scroll-target="#workstationsetup">00_WorkStationSetup</a>
   <ul>
-  <li><a href="#console" id="toc-console" class="nav-link" data-scroll-target="#console">Console</a></li>
-  <li><a href="#terminal" id="toc-terminal" class="nav-link" data-scroll-target="#terminal">Terminal</a></li>
+  <li><a href="#windows-arm" id="toc-windows-arm" class="nav-link" data-scroll-target="#windows-arm">Windows Arm</a>
+  <ul class="collapse">
+  <li><a href="#positron" id="toc-positron" class="nav-link" data-scroll-target="#positron">Positron</a></li>
   </ul></li>
-  <li><a href="#editor" id="toc-editor" class="nav-link" data-scroll-target="#editor">Editor</a>
-  <ul>
-  <li><a href="#help" id="toc-help" class="nav-link" data-scroll-target="#help">Help</a></li>
   </ul></li>
-  <li><a href="#primary-side-bar" id="toc-primary-side-bar" class="nav-link" data-scroll-target="#primary-side-bar">Primary Side Bar</a></li>
-  <li><a href="#secondary-side-bar" id="toc-secondary-side-bar" class="nav-link" data-scroll-target="#secondary-side-bar">Secondary Side Bar</a>
-  <ul>
-  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables">Variables</a></li>
-  <li><a href="#plots" id="toc-plots" class="nav-link" data-scroll-target="#plots">Plots</a></li>
-  <li><a href="#view" id="toc-view" class="nav-link" data-scroll-target="#view">View</a></li>
-  </ul></li>
-  <li><a href="#activity-bar" id="toc-activity-bar" class="nav-link" data-scroll-target="#activity-bar">Activity Bar</a>
-  <ul>
-  <li><a href="#pages" id="toc-pages" class="nav-link" data-scroll-target="#pages">Pages</a></li>
-  <li><a href="#search" id="toc-search" class="nav-link" data-scroll-target="#search">Search</a></li>
-  <li><a href="#extensions" id="toc-extensions" class="nav-link" data-scroll-target="#extensions">Extensions</a></li>
-  <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git">Git</a></li>
-  </ul></li>
-  <li><a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up">Wrap-up</a></li>
-  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a></li>
+  <li><a href="#positron-1" id="toc-positron-1" class="nav-link" data-scroll-target="#positron-1">00_Positron</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../course/00_GitHub/index.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../../course/00_Positron/index.html">00 - Positron</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Using Positron</h1>
+<h1 class="title">Bonus Content</h1>
 </div>
 
 
@@ -305,7 +282,7 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 21, 2026</p>
+      <p class="date">February 4, 2026</p>
     </div>
   </div>
   
@@ -321,213 +298,33 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
 <div style="text-align: right;">
 <p><a href="https://www.gnu.org/licenses/agpl-3.0.en.html"><img src="https://img.shields.io/badge/license-AGPLv3-blue.png" class="img-fluid" alt="AGPL-3.0"></a> <a href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg" class="img-fluid" alt="CC BY-SA 4.0"></a></p>
 </div>
-<p>For screen-shot slides, click <a href="../../course/00_Positron/slides.html">here</a></p>
-<p>For the YouTube narration, click <a href="https://www.youtube.com/@CytometryInR">here</a></p>
-<section id="background" class="level1">
-<h1>Background</h1>
-<p>In this course, we are creating and working with code from the programming language <a href="https://www.r-project.org/">R</a>. However, in practice, we are not running the code directly using just the base R software. Typically, we are running an integrated development environment (IDE), which is an additional software running on top of base R.</p>
-<p>An IDE has the responsibility to help organize and manage the projects folders, pass along lines of code being executed (run) to the underlying R software, and then return and visualize the outputs in a manner that leads to increased producitivity. Examples of IDEs include <a href="https://positron.posit.co/">Positron</a>, <a href="https://code.visualstudio.com/">Visual Studio Code</a> and <a href="https://posit.co/downloads/">Rstudio</a>.</p>
-<p>For this course, we will be using <a href="https://positron.posit.co/">Positron</a> as our primary IDE. For those of you who have previous R experience, you are likely more familiar with <a href="https://posit.co/downloads/">Rstudio</a> which is also made by Posit, and is the older of the two IDEs. Why use Positron for this course then?</p>
-<p>There are several reasons. First, Positron combines the best elements of both Rstudio (which preceeded it) and VS code (from which it’s base infrastructure was <a href="https://posit.co/blog/positron-product-announcement-aug-2025/">forked</a>). In a course aimed at coding beginners, this combination is immensely helpful in bringing important elements that had been previously hidden behind several menus in Rstudio out into the open where they are immediately available, reducing complicated workarounds. In my recent experience, it has been easier to teach beginners to code well with Positron than it was previously with Rstudio.</p>
-<p>Second, Data Science (and Bioinformatics) is increasingly moving in a multi-lingual programming direction. Flow Cytometry is not immune to this trend, <a href="https://www.python.org/">Python</a>, <a href="https://julialang.org/">Julia</a> and <a href="https://rust-lang.org/">Rust</a> are appearing more in <a href="https://www.cytoconference.org/index.html">Cyto posters</a> each year. Positron is built to handle this, allowing us to bring in and use cool packages regardless of what language they are written, avoiding additional complicated workarounds to get them to work in Rstudio.</p>
-<p>And finally, having placed so much effort into making these resources available to the wider community, I don’t want to provide all my examples using Rstudio only to find out two years from now that maintenance has been discontinued by Posit and everything needs to be remade.</p>
-<p>Consequently, I decided to use Positron for the course. This walk-through will cover some of the main layout elements to help start build some initial familiarity with the IDE, which we will continue to build on throughout the course.</p>
-</section>
-<section id="getting-started" class="level1">
-<h1>Getting Started</h1>
-<p>When opening Positron for the first time, you will see something like this. Let’s work our way around the screen, covering the major items in turn.</p>
-<p><img src="images/01_PositronOpen.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-</section>
-<section id="interpreter" class="level1">
-<h1>Interpreter</h1>
-<p>On the upper right, above Session/Variables tab, you have the option to select the coding language (interpreter) being used by the project folder. For most of this course, you will likely see this set to R 4.5.2 (or your current R version). If your computer has Python installed, you may also see these versions appear within the interpreter drop-down menu.</p>
-<p><img src="images/30_Session.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-</section>
-<section id="folders" class="level1">
-<h1>Folders</h1>
-<p>As <a href="../../course/00_WorkstationSetup/index.html">briefly covered</a> at the end of WorkStation walkthrough, the folders button to the right of the interpretor button allows us to open and work with Project Folders. From the drop-down, we can also Create New Folder from a template (which we will cover in the next section), or bring them in from existing GitHub repositories (as we did last section). You will also find the option to open other project folders that have been opened recently.</p>
-<p><img src="images/31_ProjectFolderAccess.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-</section>
-<section id="panel" class="level1">
-<h1>Panel</h1>
-<p>At the bottom-center of the screen you will find the Panel region. This contains several tabs (Console, Terminal, etc).</p>
-<p><img src="https://positron.posit.co/images/user-interface-for-rstudio-migration.jpeg" class="img-fluid"></p>
-<section id="console" class="level2">
-<h2 class="anchored" data-anchor-id="console">Console</h2>
-<p>At the bottom of the sceen, you will first see the Console Tab. This is the tab where your lines of code when executed (run) will appear, as well as any messages, warnings or errors that get returned. On the right side of the console, you can find several buttons, among them restart R and delete session (for when you need a fresh start), and clear console (which keeps all previously run outputs and objects, but clears away the displayed text within the console).</p>
-<p><img src="images/02_Console.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-</section>
-<section id="terminal" class="level2">
-<h2 class="anchored" data-anchor-id="terminal">Terminal</h2>
-<p>Right next to the Console tab is your Terminal tab. While the console tab is primarily used to run R code within Positron, the terminal is the interface where code containing system commands directed at at your computer is entered. We will use this less frequently, primarily in two context: 1) rendering Quarto documents, and 2) commiting changes to version control. Among the buttons on the right-side of the terminal to make note of are the + button to add a new terminal, and the trash/garbage can button to kill (stop) the terminal.</p>
-<p><img src="images/03_Terminal.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p>The other tabs (Problems, Output, Ports, Debug Console) are used less frequently. I usually will Problems and Debug when something goes wrong with the code, as various warning and error messages will end up being displayed there.</p>
-<p><img src="images/03_Terminal.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
+<p>This is a miscellaneous page to host walk-throughs of topics that come up via the <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions">Discussion Page</a>. Rather than re-explain how to in the comments, I want to have a place to post short-walkthroughs to solve these issues, while avoiding incorporating it into the existing walk-throughs at this point in time. I hope you find it useful, and pardon the organized chaos of miscellaneous topics.</p>
+<section id="workstationsetup" class="level1">
+<h1>00_WorkStationSetup</h1>
+<section id="windows-arm" class="level2">
+<h2 class="anchored" data-anchor-id="windows-arm">Windows Arm</h2>
+<section id="positron" class="level3">
+<h3 class="anchored" data-anchor-id="positron">Positron</h3>
+<p>On the main Positron <a href="https://positron.posit.co/download.html">installation page</a>, only the installers for Windows Computers with x86 chips are currently shown. There is a beta (experimental) version of Positron for Windows ARM (ex. Snapdragons), but it needs to be installed from Positron’s GitHub <a href="https://github.com/posit-dev/positron/releases">releases page</a>.</p>
+<p><a href="../../course/00_BonusContent/images/WindowsArm.png"></a></p>
+<p>Please note, you should download the most recent version that is available to you, as they continue to update it and fix bugs. As of February 04, 2026, you would also need to install Quarto separately.</p>
+<p>To install Quarto, first navigate to their <a href="https://quarto.org/docs/get-started/">website</a>. Quarto for Windows ARM was implemented in <a href="https://github.com/quarto-dev/quarto-cli/issues/190">2023</a>, so the regular installer should work.</p>
+<p><a href="../../course/00_BonusContent/images/WindowsArm.png"></a></p>
+<p>Also, you would need a Python arm64 installation installed if you decide you want to venture into using Python at any point.</p>
 </section>
 </section>
-<section id="editor" class="level1">
-<h1>Editor</h1>
-<p><img src="https://positron.posit.co/images/user-interface-for-rstudio-migration.jpeg" class="img-fluid"></p>
-<p>Located above the panel section (ie, just above the console window) is the main area known as the Editor. It is typically where you end up writing your code. It displays any and all the files that you open.</p>
-<p>For example, when I open a .png for one of my projects, the image will appear within the editor area in the middle of my screen.</p>
-<p><img src="images/04_VisualizedPNG.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p>When the file I open is an .R script, I will be able to see and edit the code contained within that same area.</p>
-<p><img src="images/05_R.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p>Should I open a Quarto markdown file (.qmd), I can see and edit both the written as well as the code chunks contained within.</p>
-<p><img src="images/06_QMD.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p>Looking below the tabs of the opened files, I can see the file.path (location) for the file I currently have open and am working on. This is denoted by the &gt; &gt; &gt; interspersed with the parent folder names.</p>
-<p><img src="images/07_FilePath.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p>Just above the file path, and below the tabs, we find a couple buttons. Preview is used to render a Quarto document into various types of documents (including .html, .pdf or .docx) as long as no errors are encountered.</p>
-<p><img src="images/08_Preview.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p>Source tab will normally be the active view, which will show everything as code/<a href="https://www.markdownguide.org/getting-started/">markdown</a></p>
-<p><img src="images/09_Source.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p>However, we can also switch to Visual mode (by right clicking and selecting Edit Visual Mode) which will visualize it in a similar manner as if we had rendered the document as an .html webpage.</p>
-<p><img src="images/EditVisualMode.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p><img src="images/10_Visual.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p>As more files are opened, they will appear as individual tabs. These can be opened and closed as need be. The color of the text also displays their saved status.</p>
-<p><img src="images/11_NavigatingBetween.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<section id="help" class="level2">
-<h2 class="anchored" data-anchor-id="help">Help</h2>
-<p>When trying to evaluate how a particular function is working in R, you can hover over it and positron will open up the documentation for that particular function if available, alternatively, you can enter ?theParticularFunctionsName in the console and hit enter to similarly view what is occuring.</p>
-<p><img src="images/Help.png" class="img-fluid"></p>
 </section>
-</section>
-<section id="primary-side-bar" class="level1">
-<h1>Primary Side Bar</h1>
-<p><img src="https://positron.posit.co/images/user-interface-for-rstudio-migration.jpeg" class="img-fluid"></p>
-<p>To open a file, several options exist. If they are present within your Project folder, you can click on the pages tab on the activity bar (far upper left) and then click on the file of interest shown within the primary side bar (between the activity bar and the editor). Alternatively, the Open Folder icon on the upper-left or entering “Ctrl + O”/“Command + O” will open a pop-up to allow you to navigate and select a folder elsewhere on your computer.</p>
-<p><img src="images/OpenFile.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p>Unsaved changes to an open file are reflected by on the tab the change in color of the text, and the appearance of a dot. We can click the Save changes button to change this.</p>
-<p><img src="images/SaveChanges.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-</section>
-<section id="secondary-side-bar" class="level1">
-<h1>Secondary Side Bar</h1>
-<p><img src="https://positron.posit.co/images/user-interface-for-rstudio-migration.jpeg" class="img-fluid"></p>
-<p>The secondary side bar is found on the right-side of the screen, to the right of the Editor and Panel windows. It is divided between an upper, and a lower portion.</p>
-<section id="variables" class="level2">
-<h2 class="anchored" data-anchor-id="variables">Variables</h2>
-<p>On the upper-portion of the Secondary Side Bar, we can find the Session window, containing the Variables tab. As you run (execute) lines of code, and different variables, objects and functions are created, these become visible under the variables tab on the upper right.</p>
-<p><img src="images/SessionVariables.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p>For some types of objects (generally data.frames and other matrix-like objects), you can click on their listing under variables to expand to see additional details about the object (column names, etc.) as well as view a larger version which will appear within the Editor window.</p>
-</section>
-<section id="plots" class="level2">
-<h2 class="anchored" data-anchor-id="plots">Plots</h2>
-<p>Similarly, any generated Plots or Documents will appear within the Secondary Side Bar, either under Plots (bottom) or Viewer (top) tabs.</p>
-<p><img src="images/SessionPlots.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-</section>
-<section id="view" class="level2">
-<h2 class="anchored" data-anchor-id="view">View</h2>
-<p>On the upper bar multiple tabs can be found, which we will explore in due time. Most useful to point out is the View tab. If you accidentally close your console, session or plots window, and are trying to get them to reapper, you would need to reselect them from this tab.</p>
-<p><img src="images/28_View.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-</section>
-</section>
-<section id="activity-bar" class="level1">
-<h1>Activity Bar</h1>
-<p><img src="https://positron.posit.co/images/user-interface-for-rstudio-migration.jpeg" class="img-fluid"></p>
-<p>At the far-left side of the screen, you will find the activity bar, which contains several tabs. Depending on which one you have opened, the contents will be displayed on the primary side bar next to it.</p>
-<section id="pages" class="level2">
-<h2 class="anchored" data-anchor-id="pages">Pages</h2>
-<p>The pages tab and the left-side bar show you everything that is currently within your project folder, including all the folders, and files. Once version control with Git is initiated, new files are relected showing up as green text and a dot, while modified tracked files are reflected by light brown text and a dot.</p>
-<p><img src="images/27_ChangesSinceLastCommit.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p>The dropdown arrows can be used to open and close specific folders to allow for better organization. There is also a scrollbar on the right-side of the side-bar to scroll through the entire folders contents.</p>
-<p><img src="images/26_MainTab.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-</section>
-<section id="search" class="level2">
-<h2 class="anchored" data-anchor-id="search">Search</h2>
-<p>The search tab on the left side bar is something that I use routinely.</p>
-<p><img src="images/24_SearchTab.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p>It can help locate code that you had been working on, but have since forgotten where it is at. Here is an example of finding the files where I had used a function that needed modifying within a local project folder’s files.</p>
-<p><img src="images/25_SearchResults.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p>Similarly, if you need to replace a particular character string with another, the replace with field below can help simplify the task without having to track down and change 20 lines across 5 files.</p>
-<p><img src="images/24_SearchTab.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-</section>
-<section id="extensions" class="level2">
-<h2 class="anchored" data-anchor-id="extensions">Extensions</h2>
-<p>On the far-left side we can find the Activity bar, which contains several tabs. Which tab you have selected will then dictate the contents of your left side-bar.</p>
-<p>Occupying the left side bar are several tabs. One of these is Extensions, which shows “Plugins” (or the VScode equivalent) that extend the functionality of Positron further. The ones you have installed may vary, but the main ones in context of this course are Air (provides color and highlights syntax for R code to make interpretation easier) as well as Quarto (for rendering the various document types).</p>
-<p><img src="images/29_ExtensionsTab.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-</section>
-<section id="git" class="level2">
-<h2 class="anchored" data-anchor-id="git">Git</h2>
-<p>The Git tab on the left side bar is where once version control is initiated for the project folder, we can see changes that have occurred to the individual files since the last commit. These changes can be added to a new commit by clicking on the + sign. This will be covered more extensively in the <a href="../../course/00_Git/index.html">next section</a></p>
-<p><img src="images/20_SaveChanges.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p>Similarly, if you want to discard a change that has occured, the circular arrow will revert to the last commited version. Selecting and pressing the delete button will similarly work.</p>
-<p><img src="images/21_DiscardChanges.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-<p>Selecting the … options will highlight all the various git functions, some of which we will cover more extensively in the <a href="../../course/00_Git/index.html">next section</a> and throughout the course.</p>
-<p><img src="images/23_AdditionalGitOptions.png" class="img-fluid"></p>
-<p><br></p>
-<hr>
-</section>
-</section>
-<section id="wrap-up" class="level1">
-<h1>Wrap-up</h1>
-<p>In this walk-through, we looked at some of the elements within Positron. Don’t worry, you don’t need to remember them all or what they do at this point of time, these will come with practice over the first few weeks of the course.</p>
-<p>In the <a href="../../course/00_Git/index.html">next section</a>, we will take a closer look at using the version control software Git that we have previewed here.</p>
-</section>
-<section id="additional-resources" class="level1">
-<h1>Additional Resources</h1>
-<p><a href="https://posit.co/blog/a-quick-tour-of-positron/">A brief tour of Positron</a></p>
-<p><a href="https://youtu.be/4Ir_HX4riHw?si=awSUVjdzBPDVR4Iw">A brief tour of Positron (YouTube)</a></p>
-<p><a href="https://positron.posit.co/welcome.html">Welcome to Positron</a></p>
-<div style="text-align: right;">
-<p><a href="https://www.gnu.org/licenses/agpl-3.0.en.html"><img src="https://www.gnu.org/graphics/agplv3-with-text-162x68.png" class="img-fluid" alt="AGPL-3.0"></a> <a href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" class="img-fluid" alt="CC BY-SA 4.0"></a></p>
-</div>
+<section id="positron-1" class="level1">
+<h1>00_Positron</h1>
+<p>Within Positron, there exist a toggle button to switch between source and visual mode on Quarto documents. But what do you do when you can’t find it?</p>
+<p><a href="../../course/00_BonusContent/images/ToggleAfika.png"></a></p>
+<p>Tuns out…. Visual Mode is currently broken, so the developers <a href="https://github.com/posit-dev/positron/issues/1805#issuecomment-3792323435">removed it</a> about two weeks ago.</p>
+<p>The current way to switch to it is via right-click, then select edit visual mode.</p>
+<p><a href="../../course/00_BonusContent/images/EditVisualMode.png"></a></p>
+<p>Vice versa, once there, you can revert by right-clicking and selecting Edit Source Mode</p>
+<p><a href="../../course/00_BonusContent/images/EditVisualMode.png"></a></p>
+<p>The process of figuring what is going on highlights how to use a GitHub Discussion Page. This is <a href="https://github.com/posit-dev/positron/discussions?discussions_q=visual+button">Positrons</a> when I searched for visual button. I then found that a similar question was asked 3 days ago that led me to the linked thread above.</p>
+<p><a href="../../course/00_BonusContent/images/DiscussionPageSearch.png"></a></p>
 
 
 </section>
@@ -932,18 +729,6 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../course/00_WorkstationSetup/index.html" class="pagination-link" aria-label="00 - Workstation Setup">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">00 - Workstation Setup</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../course/00_Git/index.html" class="pagination-link" aria-label="00 - Git">
-        <span class="nav-page-text">00 - Git</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
