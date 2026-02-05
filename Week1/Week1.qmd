@@ -1,0 +1,22 @@
+---
+title: "Untitled"
+format: html
+---
+
+
+```{r}
+install.packages("dplyr")
+install.packages("BiocManager")
+install("PeacoQC")
+install("remotes")
+```
+
+```{r}
+library(dplyr)
+library(BiocManager)
+library(PeacoQC)
+library(remotes)
+```
+```{r}
+sessionInfo()
+```
