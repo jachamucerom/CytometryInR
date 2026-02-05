@@ -999,7 +999,7 @@ R package: ggcyto
 # Location: Bioconductor
 # Website: https://www.bioconductor.org/packages/release/bioc/html/ggcyto.html
 
-install.packages("ggcyto")
+install("ggcyto")
 ```
 
 <br>
@@ -1037,7 +1037,7 @@ R package: openCyto
 # Location: Bioconductor
 # Website: https://www.bioconductor.org/packages/release/bioc/html/openCyto.html
 
-install.packages("openCyto")
+install("openCyto")
 ```
 
 <br>
@@ -1056,7 +1056,7 @@ R package: FlowSOM
 # Location: Bioconductor
 # Website: https://www.bioconductor.org/packages/release/bioc/html/FlowSOM.html
 
-install.packages("FlowSOM")
+install("FlowSOM")
 ```
 
 <br>
