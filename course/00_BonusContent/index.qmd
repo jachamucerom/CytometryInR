@@ -54,3 +54,35 @@ Vice versa, once there, you can revert by right-clicking and selecting Edit Sour
 The process of figuring what is going on highlights how to use a GitHub Discussion Page. This is [Positrons](https://github.com/posit-dev/positron/discussions?discussions_q=visual+button) when I searched for visual button. I then found that a similar question was asked 3 days ago that led me to the linked thread above.
 
 ![](/course/00_BonusContent/images/DiscussionPageSearch.png)
+
+# 00_Git
+
+## Not Detecting Git
+
+If you leave the "Initialize Git Repository" option unclicked when setting up a New Folder from Template, Git will not be active within your project folder.
+
+![](/course/00_BonusContent/images/NoGitInitialized.png)
+
+As a result, when you try to use the `usethis` packages `use_github(private=true)` function, you will get an error that resembles the one below
+
+![](/course/00_BonusContent/images/NoGitDetected.png)
+
+To initiate a Git repository after the fact, you will need to go to the Version Control tab in the action bar, and select the option. 
+
+![](/course/00_BonusContent/images/InitializeRepository.png)
+
+Then, you will need to stage the files you want to work with, and commit them. 
+
+![](/course/00_BonusContent/images/SaveCommit.png)
+
+`use_github(private=TRUE)` should now be functional at that point. However, you can also choose to continue via Positron's interface instead by selecting Publish. 
+
+![](/course/00_BonusContent/images/PublishBranch.png)
+
+It will then ask you whether you want to save it as either a Public or a Private repository.
+
+![](/course/00_BonusContent/images/PrivateRepository.png)
+
+And if all goes well, you will see the "Successs" pop-up in the lower-right
+
+![](/course/00_BonusContent/images/SuccessToGitHub.png)
