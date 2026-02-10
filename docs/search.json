@@ -1163,5 +1163,19 @@
     "title": "01 - Installing R Packages",
     "section": "Documentation and Websites",
     "text": "Documentation and Websites\n\n\n\n\n\n\n\n\n.\n\n\nWe have already seen a couple ways to access the help documentation contained within an R package via Positron. Beyond internal documentation, R packages often have external websites that contain additional walk-through articles (ie. vignettes) to better document how to use the package.\nFor CRAN-based packages, we can start off by searching for the package name. So, in the case of dplyr"
+  },
+  {
+    "objectID": "course/00_BonusContent/Immport/images/index.html",
+    "href": "course/00_BonusContent/Immport/images/index.html",
+    "title": "ImmPort - Downloading Datasets",
+    "section": "",
+    "text": "To download data from the ImmPort Shared Data Repository, first navigate to the website\n\nFor help setting up Aspera Connect, see the following help documentation"
+  },
+  {
+    "objectID": "course/01_InstallingRPackages/homeworks/tomthescientist3001/TakeHomeQuestions.html",
+    "href": "course/01_InstallingRPackages/homeworks/tomthescientist3001/TakeHomeQuestions.html",
+    "title": "Turning In Optional Take-Home Problems",
+    "section": "",
+    "text": "This is an example of turning in an assignment.\n\nProblem 1\nBased on the PeacoQC package documentation (version 1.20.0), the package contains 5 main functions.\n\n\nProblem 2\nThere are currently 69 packages under FlowCytometry. The most author/maintainer is Givanna Putri with the package “SuperCellCyto”.\n\n\nProblem 3\nInstallation Method 1: we need different commands for different sources: install.packages() for CRAN packages BiocManager::install() for Bioconductor packages remotes::install_github() for GitHub packages\nInstallation Method 1(with pak): one command pak::pkg_install() works for all packages, no matter where they come from. It automatically figures out if a package is from CRAN, Bioconductor, or GitHub. However, dependencies were tricky because I needed to find the correct GitHub addresses, which could slow down the process."
   }
 ]
